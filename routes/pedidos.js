@@ -4,7 +4,7 @@ const router = express.Router();
 //RETORNA TODOS OS PEDIDO
 router.get('/', (req, res, next) =>{
     res.status(200).send({
-        mensagem: 'Retorna os pedidos'
+        mensagem: 'Pedido retornado com sucesso!'
     });
 });
 
@@ -16,7 +16,7 @@ router.post('/', (req, res, next) => {
     };
     
     res.status(201).send({
-        mensagem: 'O pedido foi criado',
+        mensagem: 'Pedido inserido com sucesso!',
         pedidoCriado: pedido
     });
 });
@@ -24,7 +24,7 @@ router.post('/', (req, res, next) => {
 //ALTERA UM PEDIDO
 router.patch('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Pedido alterado'
+        mensagem: 'Pedido alterado com sucesso!'
     });
 });
 
@@ -32,7 +32,7 @@ router.patch('/', (req, res, next) => {
 //EXCLUI UM PEDIDO
 router.delete('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Pedido excluído'
+        mensagem: 'Pedido excluído com sucesso!'
     });
 });
 

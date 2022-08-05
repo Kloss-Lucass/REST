@@ -4,7 +4,7 @@ const router = express.Router();
 //RETORNA TODOS OS PRODUTOS
 router.get('/', (req, res, next) =>{
     res.status(200).send({
-        mensagem: 'Produto retornado'
+        mensagem: 'Produto retornado com sucesso!'
     });
 });
 
@@ -16,7 +16,7 @@ router.post('/', (req, res, next) => {
     };
 
     res.status(201).send({
-        mensagem: 'Produto inserido',
+        mensagem: 'Produto inserido Com sucesso!',
         produtoCriado: produto
     });
 });
@@ -24,14 +24,14 @@ router.post('/', (req, res, next) => {
 //ALTERA UM PRODUTO
 router.patch('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Produto alterado'
+        mensagem: 'Produto alterado com sucesso!'
     });
 });
 
 //EXCLUI UM PRODUTO
 router.delete('/', (req, res, next) => {
     res.status(201).send({
-        mensagem: 'Produto excluído'
+        mensagem: 'Produto excluído com sucesso!'
     });
 });
 

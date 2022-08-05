@@ -32,7 +32,7 @@ app.use('/pedidos', rotaPedidos);
 
 //QUANDO NÃO ENCONTRA ROTA, ENTRA AQUI
 app.use((req, res, next) => {
-    const erro = new Error('Não encontrado');
+    const erro = new Error('Não foi possível concluir a solicitação!');
     erro.status = 404;
     next(erro);
 });
